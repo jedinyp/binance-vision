@@ -1,7 +1,7 @@
 import pandas as pd
 import os
-from src.misc import generate_date_list
-from src.config import Config
+from .misc import generate_date_list
+from .config import Config
 
 def load_products(symbol: str, market: str, data: str, date_range: tuple[str, str], resolution: str = "1m", output_folder = Config.OUTPUT_DIR):
     """

@@ -1,5 +1,5 @@
-from src.misc import generate_date_list
-from src.config import Config
+from .misc import generate_date_list
+from .config import Config
 import requests
 import zipfile
 import os

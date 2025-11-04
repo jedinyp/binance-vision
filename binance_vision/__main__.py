@@ -1,9 +1,8 @@
-from src.core import build_urls, fetch_products, unzip_products
-from src.loader import load_products
+from binance_vision.core import build_urls, fetch_products, unzip_products
+from binance_vision.loader import load_products
 
-# Example usage
-if __name__ == "__main__":
-
+def main():
+    # Example usage
     # Parameters
     symbol = "BTCBVOLUSDT"
     market = "options"
@@ -18,3 +17,6 @@ if __name__ == "__main__":
     in_memory = load_products(symbol, market, data, date_range, resolution)
     
     print(in_memory)
+
+if __name__ == "__main__":
+    main()
